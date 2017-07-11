@@ -1,0 +1,61 @@
+<nav id="main" class="navbar navbar-default  navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logo" src="../../assets/main-logo.png" alt="logo">
+      <a href="#" style="color:gray"><i class="fa fa-bars fa-2x pull-left"  (click)="openNav()"></i></a>
+    </div>
+  </div>
+</nav>
+
+<div id="MainMenu" class="sidenav" dropdown>
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#sublist1" (click)="isCollapsed = !isCollapsed" class="menuitem">Jeddah <i class="fa fa-caret-down"></i></a>
+  <div (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="!isCollapsed" id="sublist3">
+    <a href="#" class="branch">Branch 1</a>
+    <a href="#" class="branch">Branch 2</a>
+    <a href="#" class="branch">Branch 3</a>
+  </div>
+  <a href="#sublist2" (click)="isCollapsed = !isCollapsed" class="menuitem">Riyadh <i class="fa fa-caret-down"></i></a>
+  <div (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="!isCollapsed" id="sublist2">
+    <a href="#" class="branch">Branch 1</a>
+    <a href="#" class="branch">Branch 2</a>
+    <a href="#" class="branch">Branch 3</a>
+  </div>
+  <a href="#sublist3" (click)="isCollapsed = !isCollapsed" class="menuitem">Dammam <i class="fa fa-caret-down"></i></a>
+    <div (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="!isCollapsed" id="sublist3">
+    <a href="#" class="branch">Branch 1</a>
+    <a href="#" class="branch">Branch 2</a>
+    <a href="#" class="branch">Branch 3</a>
+  </div>
+
+
+</div>
+
+
+
+<!--  
+  <div class="list-group-item" dropdown>
+    <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+    Button dropdown <span class="caret"></span>
+  </button>
+    <ul *dropdownMenu class="dropdown-menu" role="menu">
+      <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+      <li class="divider dropdown-divider"></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+      </li>
+    </ul>
+  </div>-->
+
+
+<!--
+</div>
+  <a href="#" class="list-group-item " data-toggle="collapse" data-parent="#MainMenu" dropdownToggle>Item 4<i class="fa fa-caret-down"></i></a>
+  <div class="collapse" id="demo4" *dropdownMenu>
+    <a href="" class="list-group-item">Subitem 1</a>
+    <a href="" class="list-group-item">Subitem 2</a>
+    <a href="" class="list-group-item">Subitem 3</a>
+  </div>
+
+</div>-->

@@ -1,0 +1,53 @@
+<div id="wrapper">
+
+  <!--Top Navigation Bar-->
+  <div id="sidebar-wrapper">
+    <nav id="main" class="navbar navbar-default  navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img class="logo img-responsive" src="../../assets/logos/main-logo.png" alt="logo">
+          <a href="#" style="color:gray" id="menu-toggle"><i class="fa fa-bars fa-2x pull-left" (click)="isClassVisible = !isClassVisible;" (click)="ManageNav()"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!--Sidebar Menu-->
+    <div id="MainMenu" class="sidenav" dropdown>
+      <a href="#sublist1" class="menuitem">Jeddah </a>
+      <div id="sublist3">
+        <a href="#" class="branch" (click)="closeNav()" (click)="updateUpdate()">Basateen</a>
+        <a href="#" class="branch" (click)="closeNav()" (click)="updateUpdate()">Safa</a>
+        <a href="#" class="branch" (click)="closeNav()" (click)="updateUpdate()">Meenaa</a>
+      </div>
+      <a href="#sublist2" class="menuitem">Riyadh </a>
+      <div id="sublist2">
+        <a href="#" class="branch" (click)="closeNav()" (click)="updateUpdate()">Moroj</a>
+        <a href="#" class="branch" (click)="closeNav()" (click)="updateUpdate()">Bathahaa</a>
+        <a href="#" class="branch" (click)="closeNav()" (click)="updateUpdate()">Mgeria</a>
+      </div>
+      <a href="#sublist3" class="menuitem">Dammam </a>
+      <div id="sublist3">
+        <a href="#" class="branch" (click)="closeNav()" (click)="updateUpdate()">Khobar</a>
+        <a href="#" class="branch" (click)="closeNav()" (click)="updateUpdate()">Alnozlah</a>
+        <a href="#" class="branch" (click)="closeNav()" (click)="updateUpdate()">Betena</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- SemiCircle Bars-->
+  <div id="page-content-wrapper" [ngClass]="{'menuDisplayed': isClassVisible }">
+    <div class="row">
+      <semi-circle-bar class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2" [idscb]="desiredid" [(update)]="updateBars"></semi-circle-bar>
+      <semi-circle-bar class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2" [idscb]="desiredid2" [(update)]="updateBars"></semi-circle-bar>
+    </div>
+    <div class="row">
+      <semi-circle-bar class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1" [idscb]="desiredid3" [(update)]="updateBars"></semi-circle-bar>
+      <semi-circle-bar class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2" [idscb]="desiredid4" [(update)]="updateBars"></semi-circle-bar>
+      <semi-circle-bar class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2" [idscb]="desiredid5" [(update)]="updateBars"></semi-circle-bar>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<a href=# class="" >
+
+    <div class="wrapper">
+        <div class="bar" [attr.id]="idscb" (click)="barClicked()"></div>
+
+        <div class="roomTitle">
+            <p> {{title}} <img class="icon" src={{imgSrc}}/></p>
+        </div>
+        
+        <app-bubble-chart [(display)]="displayBubble" [chartLabel]="labelBubble"></app-bubble-chart>
+    </div>
+
+</a>

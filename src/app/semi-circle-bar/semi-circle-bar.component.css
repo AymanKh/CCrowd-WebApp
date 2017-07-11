@@ -1,0 +1,26 @@
+.bar {
+    /*margin: 40px 40px 40px 40px;*/
+    /*-ms-transform: translate(-50%, -50%);*/
+}
+
+* {
+    /*border: 3px solid blueviolet;*/
+}
+
+.roomTitle {
+    width: 160px;
+    margin: 0 auto;   
+}
+p {
+    margin-top: 60px;
+    text-align: center;
+    color: black;
+    /*color: red;*/
+}
+
+.icon {
+    display: inline;
+    height: 30px;
+    width: auto;
+    margin-left: 5px;
+}
