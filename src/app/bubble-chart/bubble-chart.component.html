@@ -1,50 +1,24 @@
-<script src="node_modules/chart.js/src/chart.js"></script>
+<!-- <div id="pie_chart" [chartData]="pie_ChartData" [chartOptions]="pie_ChartOptions" chartType="PieChart" GoogleChart></div>  -->
 
 <div class="backdrop" [ngStyle]="{'display': display}"></div>
 <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display': display}">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" aria-label="Close" (click)="onErrorHandled()"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">{{ chartLabel }}</h4>
-            </div>
-            <div class="modal-body">
-                <p>Nice bubble chart goes here</p>
-  <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawSeriesChart);
-
-    function drawSeriesChart() {
-
-      var data = google.visualization.arrayToDataTable([
-        ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
-        ['CAN',    80.66,              1.67,      'North America',  33739900]
-
-      ]);
-
-      var options = {
-        title: 'Correlation between life expectancy, fertility rate ' +
-               'and population of some world countries (2010)',
-        hAxis: {title: 'Life Expectancy'},
-        vAxis: {title: 'Fertility Rate'},
-        bubble: {textStyle: {fontSize: 11}}
-      };
-
-      var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
-      chart.draw(data, options);
-    }
-    </script>
-  </head>
-  <body>
-    <div id="series_chart_div" style="width: 900px; height: 500px;"></div>
-  </body>
-                
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" (click)="onErrorHandled()">Close</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" aria-label="Close" (click)="onErrorHandled()"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">{{ chartLabel }}</h4>
+      </div>
+      <div class="modal-body">
+        <!-- <div class="bubble_chart" [chartData]="bubble_ChartData" [chartOptions]="bubble_ChartOptions" chartType="BubbleChart" GoogleChart></div> -->
+        <!-- <p>Nice bubble chart goes here Nice bubble chart goes here Nice bubble chart goes here Nice bubble chart goes here Nice bubble chart goes here Nice bubble chart goes here</p>   -->
+        <img src="./../assets/bubble_chart/bubble_chart.png">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" (click)="onErrorHandled()">Close</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

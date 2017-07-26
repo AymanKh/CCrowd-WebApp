@@ -1,3 +1,4 @@
+import { GoogleChart } from 'angular2-google-chart/directives/angular2-google-chart.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,13 +10,13 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     SemiCircleBarComponent,
     AppHeaderComponent,
-    BubbleChartComponent
+    BubbleChartComponent,
+    GoogleChart
   ],
   imports: [
     BrowserModule,
